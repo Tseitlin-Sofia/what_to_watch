@@ -19,8 +19,7 @@ class Opinion(db.Model):
             text=self.text,
             source=self.source,
             timestamp=self.timestamp,
-            added_by=self.added_by,
-            images=self.images
+            added_by=self.added_by
         )
 
     # Добавить в модель метод-десериализатор.
