@@ -20,7 +20,7 @@ def random_opinion():
 @app.route('/')
 def index_view():
     opinion = random_opinion()
-    if opinion:
+    if not opinion:
         abort(500)
     return render_template('opinion.html', opinion=opinion)
 
